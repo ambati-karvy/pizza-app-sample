@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.full-width-input {
+  width: 100%;
+}
+
+.mg-top-15 {
+  margin-top: 15px;
+}
+
+.mg-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.ValidationErrorLabel {
+  width: 100%;
+  background: #D42434;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: green !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: green !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: green !important;;
+}
+
+.mat-form-field-underline {
+  background-color: green;
+}
+

@@ -1,0 +1,32 @@
+<div class="container content">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12">
+            <app-pizza-select-viwer (addPizza)="onPizzaAdd()"  [selectedPizzaGroup]="selectedPizzaGroup"></app-pizza-select-viwer>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <app-customer-details ></app-customer-details>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <button class="pull-right" mat-raised-button color="primary" >
+                SUBMIT
+              </button>
+              <button mat-raised-button color >
+                RESET
+              </button>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <app-pizza-list [group]="form" (addPizza)="onPizzaAdd()">
+        </app-pizza-list>
+      </div>
+    </div>
+</div>
+  
+  
